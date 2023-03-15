@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #662D8C, #ED1E79);
+    /* background-color: #212529; */
+    min-height: 1vh ;
+    color: black;
+}
+
+h1 {
+    width: 50%;
+    align-items: center;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    border-bottom: 4px solid black;
+    /* display: inline-block; */
+    /* margin: 5px; */
+    /* margin-left: 32rem; */
+    margin-left: 25%;
+
+    font-family: "Playfair Display", serif;
+    color: black;
+    border-bottom: 4px double black;
+}
+
+.container-fluid {
+    /* background-color: #212529; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
+    font-size: 2rem;
+    /* background-color: red; */
+}
+
+.container-fluid .name p {
+    padding: 1rem;
+    font-size: 2.5rem;
+    /* padding: 1rem; */
+}
+
+.container-fluid .details {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid .details .fresh {
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+}
+
+.container-fluid .details .fresh button {
+    /* padding: 1rem; */
+    /* font-size: 2.5rem; */
+    /*background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer; */
+}
+
+.container-fluid .details .support {
+    /* padding: 1rem; */
+    /* top: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+}
+
+.container-fluid .details .support button {
+    /* padding: 1rem; */
+    /* font-size: 2.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer; */
+}
+
+.container-fluid .details .transfer {
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+}
+
+.container-fluid .details .transfer button {
+    /* padding: 1rem; */
+    /* font-size: 2.5rem;
+    background: transparent;
+    outline: none;
+    border: none; */
+    cursor: pointer;
+}
+
+.container-fluid .details .outbound {
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+}
+
+.container-fluid .details .outbound button {
+    /* padding: 1rem; */
+    /* font-size: 2.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer; */
+}
+
+.container-fluid .details .outbound-connect {
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+}
+
+.container-fluid .details .outbound-connect button {
+    /* padding: 1rem; */
+    /* font-size: 2.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer; */
+    /* border: 1px solid rgba(0, 0, 0, .5); */
+    /* border-radius: 50%; */
+}
+
+.data {
+    /* margin-top: 2rem; */
+    font-size: 6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.data span {
+    color: wheat;
+    font-size: 3.5rem;
+}
