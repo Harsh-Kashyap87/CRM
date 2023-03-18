@@ -15,19 +15,19 @@ const reset = document.getElementById("reset");
 fresh_plus.addEventListener("click", ()=>{
     fresh++;
     fresh = (fresh<10) ? "0" + fresh : fresh;
-    fresh_data.innerHTML = fresh;
+    fresh_data.innerHTML = "F - " +  fresh;
     fresh_num.innerHTML = fresh;
 })
 fresh_minus.addEventListener("click", ()=>{
     if(fresh <= 0 ){
         fresh = 0;
-        fresh_data.innerHTML = fresh;
+        fresh_data.innerHTML = "F - " + fresh;
     }
     else{
         fresh--;
         fresh = (fresh<10) ? "0" + fresh : fresh;
         fresh_num.innerHTML = fresh;
-        fresh_data.innerHTML = fresh;
+        fresh_data.innerHTML = "F - " + fresh;
     }
     
 })
@@ -41,19 +41,19 @@ const support_data = document.getElementById("support-data");
 support_plus.addEventListener("click", ()=>{
     support++;
     support = (support<10) ? "0" + support : support;
-    support_data.innerHTML = support;
+    support_data.innerHTML = "S - " + support;
     support_num.innerHTML = support;
 })
 support_minus.addEventListener("click", ()=>{
     if(support <= 0 ){
         support = 0;
-        support_data.innerHTML = support;
+        support_data.innerHTML = "S - " + support;
     }
     else{
         support--;
         support = (support<10) ? "0" + support : support;
         support_num.innerHTML = support;
-        support_data.innerHTML = support;
+        support_data.innerHTML = "S - " + support;
     }
     
 })
@@ -68,19 +68,19 @@ const transfer_data = document.getElementById("transfer-data");
 transfer_plus.addEventListener("click", ()=>{
     transfer++;
     transfer = (transfer<10) ? "0" + transfer : transfer;
-    transfer_data.innerHTML = transfer;
+    transfer_data.innerHTML = "T - " + transfer;
     transfer_num.innerHTML = transfer;
 })
 transfer_minus.addEventListener("click", ()=>{
     if(transfer <= 0 ){
         transfer = 0;
-        transfer_data.innerHTML = transfer;
+        transfer_data.innerHTML = "T - " + transfer;
     }
     else{
         transfer--;
         transfer = (transfer<10) ? "0" + transfer : transfer;
         transfer_num.innerHTML = transfer;
-        transfer_data.innerHTML = transfer;
+        transfer_data.innerHTML = "T - " + transfer;
     }
     
 })
@@ -95,19 +95,19 @@ const outbound_data = document.getElementById("outbound-data");
 outbound_plus.addEventListener("click", ()=>{
     outbound++;
     outbound = (outbound<10) ? "0" + outbound : outbound;
-    outbound_data.innerHTML = outbound;
+    outbound_data.innerHTML = "O - " + outbound;
     outbound_num.innerHTML = outbound;
 })
 outbound_minus.addEventListener("click", ()=>{
     if(outbound <= 0 ){
         outbound = 0;
-        outbound_data.innerHTML = outbound;
+        outbound_data.innerHTML = "O - " + outbound;
     }
     else{
         outbound--;
         outbound = (outbound<10) ? "0" + outbound : outbound;
         outbound_num.innerHTML = outbound;
-        outbound_data.innerHTML = outbound;
+        outbound_data.innerHTML = "O - " + outbound;
     }
     
 })
@@ -122,19 +122,19 @@ const outbound_connect_data = document.getElementById("outbound-connect-data");
 outbound_connect_plus.addEventListener("click", ()=>{
     outbound_connect++;
     outbound_connect = (outbound_connect<10) ? "0" + outbound_connect : outbound_connect;
-    outbound_connect_data.innerHTML = outbound_connect;
+    outbound_connect_data.innerHTML = "O.C. - " + outbound_connect;
     outbound_connect_num.innerHTML = outbound_connect;
 })
 outbound_connect_minus.addEventListener("click", ()=>{
     if(outbound_connect <= 0 ){
         outbound_connect = 0;
-        outbound_connect_data.innerHTML = outbound_connect;
+        outbound_connect_data.innerHTML = "O.C. - " + outbound_connect;
     }
     else{
         outbound_connect--;
         outbound_connect = (outbound_connect<10) ? "0" + outbound_connect : outbound_connect;
         outbound_connect_num.innerHTML = outbound_connect;
-        outbound_connect_data.innerHTML = outbound_connect;
+        outbound_connect_data.innerHTML = "O.C. - " + outbound_connect;
     }
     
 })
@@ -160,23 +160,23 @@ btn.onclick = function(){
 reset.addEventListener("click", ()=>{
     fresh = "0" + 0;
     fresh_num.innerHTML = fresh;
-        fresh_data.innerHTML = fresh;
+        fresh_data.innerHTML = "F - " + fresh;
 
     support = "0" + 0;
     support_num.innerHTML = support;
-    support_data.innerHTML = support;
+    support_data.innerHTML = "S - " + support;
 
     transfer = "0" + 0;
     transfer_num.innerHTML = transfer;
-    transfer_data.innerHTML = transfer;
+    transfer_data.innerHTML = "T. - " + transfer;
 
     outbound = "0" + 0;
     outbound_num.innerHTML = outbound;
-    outbound_data.innerHTML = outbound;
+    outbound_data.innerHTML = "O. - " + outbound;
 
     outbound_connect = "0" + 0;
     outbound_connect_num.innerHTML = outbound_connect;
-    outbound_connect_data.innerHTML = outbound_connect;
+    outbound_connect_data.innerHTML = "O.C. - " + outbound_connect;
 
     
 
