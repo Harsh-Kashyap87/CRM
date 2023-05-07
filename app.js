@@ -155,13 +155,6 @@ btn.onclick = function(){
     copyText(document.querySelector(".data"));
 }
 
-window.localStorage;
-localStorage.setItem('name',  JSON.stringify(data));
-JSON.parse(localStorage.getItem('name'));
-const userData = JSON.parse(localStorage.getItem('name'));
-console.log(userData);
-
-
 // Reset Button
 
 reset.addEventListener("click", ()=>{
