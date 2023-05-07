@@ -4,6 +4,7 @@ let transfer = 0;
 let outbound = 0;
 let outbound_connect = 0;
 
+
 // Code for fresh calls
 
 const fresh_num = document.getElementById("fresh-num");
@@ -153,6 +154,12 @@ const btn = document.getElementById("copy-btn");
 btn.onclick = function(){
     copyText(document.querySelector(".data"));
 }
+
+window.localStorage;
+localStorage.setItem('name',  JSON.stringify(data));
+JSON.parse(localStorage.getItem('name'));
+const userData = JSON.parse(localStorage.getItem('name'));
+console.log(userData);
 
 
 // Reset Button
