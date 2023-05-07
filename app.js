@@ -148,14 +148,44 @@ function copyText(htmlElement) {
     navigator.clipboard.writeText(inputElement);
 }
 
-
 const btn = document.getElementById("copy-btn");
 
+let data_call = document.querySelector(".data");
 btn.onclick = function(){
-    copyText(document.querySelector(".data"));
+    copyText(data_call);
 }
 
+// SAVE DATA INTO LOCAL STORAGE 
+
+// save_data
+
+let save_btn = document.querySelector("#save_data");
+let read_btn = document.querySelector("#read_data");
+
+save_btn.onclick = function(){
+    localStorage.setItem("name", data_call.innerText)
+}
+
+read_btn.onclick = function(){
+    data_call.innerText = localStorage.getItem("name");
+}
+
+
+
 // Reset Button
+
+// console.log(data_call.innerText);
+// console.log(Text_data.value);
+// console.log(data_call.innerText);
+const Text_data = data_call.innerText;
+console.log(Text_data);
+localStorage.setItem("notes", JSON.stringify(Text_data));
+
+let notes = localStorage.getItem("notes");
+
+Text_data.textContent = localStorage.getItem("name");
+
+
 
 reset.addEventListener("click", ()=>{
     fresh = "0" + 0;
@@ -181,4 +211,3 @@ reset.addEventListener("click", ()=>{
     
 
 })
-
