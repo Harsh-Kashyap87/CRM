@@ -153,9 +153,15 @@ h1 {
     gap: 3rem;
     align-items: center;
     justify-content: center;
+    color: wheat;
+    font-size: 1.5rem;
 }
 
 .data span {
     color: wheat;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    
 }
